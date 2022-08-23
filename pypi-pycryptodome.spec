@@ -4,7 +4,7 @@
 #
 Name     : pypi-pycryptodome
 Version  : 3.15.0
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/11/e4/a8e8056a59c39f8c9ddd11d3bc3e1a67493abe746df727e531f66ecede9e/pycryptodome-3.15.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/11/e4/a8e8056a59c39f8c9ddd11d3bc3e1a67493abe746df727e531f66ecede9e/pycryptodome-3.15.0.tar.gz
 Summary  : Cryptographic library for Python
