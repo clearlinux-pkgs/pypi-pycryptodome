@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-pycryptodome
-Version  : 3.17
-Release  : 15
-URL      : https://files.pythonhosted.org/packages/b8/2e/cf9cfd1ae6429381d3d9c14c8df79d91ae163929972f245a76058ea9d37d/pycryptodome-3.17.tar.gz
-Source0  : https://files.pythonhosted.org/packages/b8/2e/cf9cfd1ae6429381d3d9c14c8df79d91ae163929972f245a76058ea9d37d/pycryptodome-3.17.tar.gz
+Version  : 3.18.0
+Release  : 16
+URL      : https://files.pythonhosted.org/packages/b9/05/0e7547c445bbbc96c538d870e6c5c5a69a9fa5df0a9df3e27cb126527196/pycryptodome-3.18.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/b9/05/0e7547c445bbbc96c538d870e6c5c5a69a9fa5df0a9df3e27cb126527196/pycryptodome-3.18.0.tar.gz
 Summary  : Cryptographic library for Python
 Group    : Development/Tools
 License  : BSD-2-Clause Python-2.0
@@ -51,10 +51,10 @@ python3 components for the pypi-pycryptodome package.
 
 
 %prep
-%setup -q -n pycryptodome-3.17
-cd %{_builddir}/pycryptodome-3.17
+%setup -q -n pycryptodome-3.18.0
+cd %{_builddir}/pycryptodome-3.18.0
 pushd ..
-cp -a pycryptodome-3.17 buildavx2
+cp -a pycryptodome-3.18.0 buildavx2
 popd
 
 %build
@@ -62,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683045436
+export SOURCE_DATE_EPOCH=1684513715
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
