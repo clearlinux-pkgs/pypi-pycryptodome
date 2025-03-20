@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : pypi-pycryptodome
-Version  : 3.21.0
-Release  : 26
-URL      : https://files.pythonhosted.org/packages/13/52/13b9db4a913eee948152a079fe58d035bd3d1a519584155da8e786f767e6/pycryptodome-3.21.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/13/52/13b9db4a913eee948152a079fe58d035bd3d1a519584155da8e786f767e6/pycryptodome-3.21.0.tar.gz
+Version  : 3.22.0
+Release  : 27
+URL      : https://files.pythonhosted.org/packages/44/e6/099310419df5ada522ff34ffc2f1a48a11b37fc6a76f51a6854c182dbd3e/pycryptodome-3.22.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/44/e6/099310419df5ada522ff34ffc2f1a48a11b37fc6a76f51a6854c182dbd3e/pycryptodome-3.22.0.tar.gz
 Summary  : Cryptographic library for Python
 Group    : Development/Tools
 License  : BSD-2-Clause Python-2.0
@@ -18,13 +18,12 @@ Requires: pypi-pycryptodome-python = %{version}-%{release}
 Requires: pypi-pycryptodome-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(setuptools)
-BuildRequires : pypi(sphinx)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
 
 %description
-.. image:: https://github.com/Legrandin/pycryptodome/workflows/Integration%20test/badge.svg?branch=master
+.. image:: https://github.com/Legrandin/pycryptodome/workflows/Integration%20test/badge.svg
 :target: https://github.com/Legrandin/pycryptodome/actions
 
 %package license
@@ -49,20 +48,19 @@ Summary: python3 components for the pypi-pycryptodome package.
 Group: Default
 Requires: python3-core
 Provides: pypi(pycryptodome)
-Requires: pypi(sphinx)
 
 %description python3
 python3 components for the pypi-pycryptodome package.
 
 
 %prep
-%setup -q -n pycryptodome-3.21.0
-cd %{_builddir}/pycryptodome-3.21.0
+%setup -q -n pycryptodome-3.22.0
+cd %{_builddir}/pycryptodome-3.22.0
 pushd ..
-cp -a pycryptodome-3.21.0 buildavx2
+cp -a pycryptodome-3.22.0 buildavx2
 popd
 pushd ..
-cp -a pycryptodome-3.21.0 buildapx
+cp -a pycryptodome-3.22.0 buildapx
 popd
 
 %build
@@ -70,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1740084812
+export SOURCE_DATE_EPOCH=1742459973
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
