@@ -1,5 +1,5 @@
 PKG_NAME := pypi-pycryptodome
-URL = https://files.pythonhosted.org/packages/44/e6/099310419df5ada522ff34ffc2f1a48a11b37fc6a76f51a6854c182dbd3e/pycryptodome-3.22.0.tar.gz
+URL = https://files.pythonhosted.org/packages/8e/a6/8452177684d5e906854776276ddd34eca30d1b1e15aa1ee9cefc289a33f5/pycryptodome-3.23.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
